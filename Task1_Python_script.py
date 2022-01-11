@@ -4,8 +4,9 @@
 import os
 import requests
 import re
+import sys
 # Code here - Import BeautifulSoup library
-
+from bs4 import BeautifulSoup
 # Code ends here
 
 # function to get the html source text of the medium article
@@ -13,7 +14,7 @@ def get_page():
 	global url
 	
 	# Code here - Ask the user to input "Enter url of a medium article: " and collect it in url
-	
+	url = input("Enter the url to extract data from: ")
 	# Code ends here
 	
 	# handling possible error
